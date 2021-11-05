@@ -1,305 +1,460 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js">
-<!--<![endif]-->
-
-<!-- CDN DE SCROLL ANIMADO -->
-<head lang="es">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Dev. Ricardo Atahuachi M">
-    <meta name="keywords" content="desarrollador web, diseñador, desarrollador front-end">
-    <meta name="author" content="Ricardo Atahuachi M">
-
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Ricardo Atahuachi M | FullStack Developer</title>
+    <meta name="description" content="Portfolio Template for Developer" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/lightbox.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <link rel="stylesheet" href="css/style.css" />
 
-<body>
-    <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
-    <!-- <section class="barra-carga" id="barra-carga">
-            <div class="carga">
-                <div class="linea"></div>
-                <div class="linea"></div>
-                <div class="linea"></div>
-                <div class="linea"></div>
-                <div class="linea"></div>
-                <div class="linea"></div>
-                <div class="linea"></div>
-                <div class="linea"></div>
-            </div>
-        </section> -->
-    <nav class="menu">
-        <div class="foto">
-            <!-- <p><img src="img/foto.jpg" alt="Ricardo Atahuachi" class="foto"></p> -->
-        </div>
-        <div class="contenedor contenedor-menu">
-            <a href="#sobre-mi">Sobre mí</a>
-            <a href="#proyectos">Proyectos</a>
-            <a href="#conocimientos">Habilidades</a>
-            <a href="#contacto">Contacto</a>
-        </div>
-        <!-- <div class="idiomas">
-            <div class="esp idioma">
-                <img src="img/español.png" class="bandera active" alt="Español" title="Español">
-            </div>
-            <div class="eng idioma">
-                <a href="presdfs/portafolio/portafolio-en/index.html"><img src="img/english.png" class="bandera" alt="English" title="Inglés"></a>
-            </div>
-        </div> -->
-    </nav>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header class="header">
-        <div class="contenedor contenedor-header">
-            <div class="nombre">
-                <span class="fade-in">Ricardo Atahuachi M</span>
-            </div>
-            <h2 class="profesion">FUllStack Developer</h2>
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/png/john-doe.png"
+              alt="Ram Maheshwari Logo Image"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Ricardo Atahuachi M</span>
+          <h2 class="profesion">| FullStack Developer</h2>
         </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Principal </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">Sobre mí </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">
+                Proyectos
+              </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#contact" class="header__link"> Contactos </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Principal </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> Sobre mí </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Proyectos </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#contact"> Contactos </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
-
-    <main class="main">
-        <section class="sobre-mi">
-            <div class="contenedor contenedor-sobre-mi">
-                <h2 class="titulo" id="sobre-mi">Sobre mí</h2>
-                <div class="texto">
-                    <p class="direccion"><span class="dir">Bienvenido: <br><br>
-                    </span></p>
-                    <p class="descripcion">
-                        $
-                        <span id="tagline">
-                            Soy Ingeniero de sistemas con mas de 4 años de experiencia en aplicaciones de escritorio y web. He manejado diversas tecnologias ofreciendo un optimo analisis de negocio, experiencia de usuario y liderazgo de equipo. 
-                            <br>
-                            En diversas areas dentro del mundo de la tecnologia. Tanto hardware, redes y software
-                            <del></del></span><del id="pow-trigger"></del>
-                    </p>
-                </div>
-                <!--  <div class="boton">
-                   <a class="boton" id="boton">Iniciar consola</a> 
-                </div> -->
-            </div>
-        </section>
-
-        <section class="proyectos">
-            <h2 class="titulo" id="proyectos">Algunos proyectos realizados</h2>
-            <div class="contenedor contenedor-proyectos">
-                <div class="proyecto">
-                    <div class="foto">
-                        <a href="https://matriculacion.upea.bo/" target="_blank"><img
-                                src="img/proyectos/mae.png" alt=""></a>
-                    </div>
-                    <div class="info">
-                        <h4 style="margin-bottom: 0px;">Sistema de matricuacion para estudiantes universitarios</h4>
-                        <h5>Tecnologías utilizadas:</h5>
-                        <p><span class="html">HTML5</span> - <span class="css">CSS3</span> - <span class="javascript">JavaScript</span> - <span class="javascript">PHP</span> - <span class="javascript">Postgres</span></p>
-                    </div>
-                </div>
-
-                <div class="proyecto">
-                    <div class="foto">
-                        <a href="https://sistema-test-c1731.web.app/#/login" target="_blank"><img src="img/proyectos/ventas.jpg"
-                                alt=""></a>
-                    </div>
-                    <div class="info">
-                        <h4>Sistema Demo de ventas</h4>
-                        <h5>Tecnologías utilizadas:</h5>
-                        <p><span class="html">HTML5</span> - <span class="css">CSS3</span> - <span class="javascript">JavaScript</span> - <span class="sass">VueJS</span> - <span class="javascript">Firebase</span></p>
-                    </div>
-                </div>
-
-                <div class="proyecto">
-                    <div class="foto">
-                        <a href="https://desarrollo-test-7c33a.web.app/" target="_blank"><img src="img/proyectos/ruleta.jpg"
-                                alt=""></a>
-                    </div>
-                    <div class="info">
-                        <h4>Juego de la ruleta</h4>
-                        <h5>Tecnologías utilizadas:</h5>
-                        <p><span class="html">HTML5</span> - <span class="css">CSS3</span> - <span class="javascript">JavaScript</span> - <span class="sass">Angular</span></p>
-                    </div>
-                </div>
-
-        </section>
-
-        <div class="conocimientos">
-            <h2 class="titulo" id="conocimientos">Habilidades tecnológicas</h2>
-            <div class="contenedor">
-                <div class="contenedor-conocimientos">
-                    <div class="tarjeta">
-                        <input type="checkbox" name="">
-                        <div class="cambio red">+</div>
-                        <div class="img">
-                            <img src="img/habilidades/html.jpg" alt="">
-                        </div>
-                        <div class="detalles">
-                            <h3>HTML 5</h3>
-                            <p>
-                                Sus siglas vienen del inglés 'HyperText Markup Language'. Traducido al español
-                                quiere decir 'Lenguaje de Marcado e HiperTexto'. Este lenguaje de marcado nos permite
-                                crear la estructura
-                                (o cuerpo) básica de un sitio web mediante tags (etiquetas). El número cinco (5) hace
-                                referencia a la versión
-                                en la que se encuentra actualmente. Todos los titulos, párrafos, formularios, videos,
-                                entre muchísimas cosas más,
-                                las tenemos gracias a este maravilloso lenguaje.
-                            </p>
-                        </div>
-                        <!--. detalles -->
-                    </div>
-                    <!--. tarjeta -->
-
-                    <div class="tarjeta">
-                        <input type="checkbox" name="">
-                        <div class="cambio black">+</div>
-                        <div class="img">
-                            <img src="img/habilidades/css.jpg" alt="">
-                        </div>
-                        <div class="detalles">
-                            <h3>CSS</h3>
-                            <p>
-                                CSS es un lenguaje de estilo. Sus siglas también tienen un significado 'Cascading
-                                StyleSheet',
-                                su traducción es 'Hojas de estilo de cascada'. Seguro ya sabrás qué quiere decir el
-                                número tres (3),
-                                ¿verdad? ¡Exacto! Su versión actual.
-
-                                Este lenguaje de estilos nos permite... pues, darle estilos al cuerpo de nuestro sitio
-                                web.
-                                Es el maquillaje de HTML. Todo el diseño de un sitio va directamente relacionado con
-                                este lenguaje.
-                            </p>
-                        </div>
-                        <!--. detalles -->
-                    </div>
-                    <!--. tarjeta -->
-
-                    <div class="tarjeta" style="height: 80%;">
-                        <input type="checkbox" name="">
-                        <div class="cambio red">+</div>
-                        <div class="img">
-                            <img src="img/habilidades/js.jpg" alt="">
-                        </div>
-                        <div class="detalles">
-                            <h3>JavaScript</h3>
-                            <p>
-                                ¡Bendito JavaScript! Es un lenguaje de programación que nos permite añadir, eliminar,
-                                aplicar animaciones o
-                                efectos a los componentes de nuestro sitio. Es la herramienta perfecta para realizar
-                                sitios web dinámicos
-                                y muy atractivos de la mano de CSS y HTML. Con el paso del tiempo ha evolucionado de
-                                manera exponencial y
-                                ahora mismo es absolutamente necesario conocerlo si quieres ser desarrollador web.
-                            </p>
-                        </div>
-                        <!--. detalles -->
-                    </div>
-                    <!--. tarjeta -->
-
-                    <div class="tarjeta">
-                        <input type="checkbox" name="">
-                        <div class="cambio black">+</div>
-                        <div class="img">
-                            <img src="img/habilidades/bootstrap.jpg" alt="">
-                        </div>
-                        <div class="detalles">
-                            <h3>Bootstrap</h3>
-                            <p>
-                                Es una de las estructuras de trabajo más usados en el mundo. Este framework
-                                hace mucho más sencillo el diseño y posicionamiento de los elementos con CSS.
-                                Te ahorras mucho tiempo gracias a que por defecto él trae las herramientas o código
-                                interno para que tú no tengas que escribir nada más que clases específicas que tiene
-                                predefinidas.
-                                Con una de estas clases de bootstrap te podrías ahorrar 5 o más lineas de código en
-                                CSS.
-                            </p>
-                        </div>
-                        <!--. detalles -->
-                    </div>
-                    <!--. tarjeta -->
-
-                    <div class="tarjeta">
-                        <input type="checkbox" name="">
-                        <div class="cambio red">+</div>
-                        <div class="img">
-                            <img src="img/habilidades/sass.png" alt="">
-                        </div>
-                        <div class="detalles">
-                            <h3>Sass</h3>
-                            <p>
-                                Al igual que CSS, es un lenguaje de estilos que con el tiempo se ha ido extendiendo.
-                                Sin embargo
-                                no es la "competencia de CSS" sino todo lo contrario. El lenguaje de estilos Sass debe
-                                traducirse luego a CSS.
-                                Puedes preguntar: "¿De qué me sirve entonces?". Sass nos permite escribir código CSS
-                                mucho más fácil, rápida y
-                                además facilita herramientas que CSS por si solo no puede darte a pesar de usar los
-                                mismos
-                                atributos. Es muy, MUY, M-U-Y usado.
-                            </p>
-                        </div>
-                        <!--. detalles -->
-                    </div>
-                    <!--. tarjeta -->
-
-                    <div class="tarjeta">
-                        <input type="checkbox" name="">
-                        <div class="cambio black">+</div>
-                        <div class="img">
-                            <img src="img/habilidades/wordpress.png" alt="">
-                        </div>
-                        <div class="detalles">
-                            <h3>WordPress</h3>
-                            <p>
-                                Es un sistema de gestión de contenido. En palabras menos técnicas: es una herramienta
-                                que facilita la administración de muchos aspectos de tu sitio web sin
-                                necesidad tener conocimientos sobre programación. <br> Sí, como lo lees, cualquier
-                                persona puede usar
-                                o modificar el software de WordPress, además puede hacerlo de forma gratuita. Más del
-                                32% de
-                                todos los sitios web en internet están hechos con WordPress.
-                            </p>
-                        </div>
-                        <!--. detalles -->
-                    </div>
-                    <!--. tarjeta -->
-                </div>
-                <!--. conocimientos -->
-            </div>
-            <!--. contenedor -->
+    <section class="home-hero">
+      <div class="home-hero__content">
+        <h1 class="heading-primary">Hey, Mi nombre es Ricardo Atahuachi M.</h1>
+        <div class="home-hero__info">
+          <p class="text-primary">
+            <span id="tagline">
+              Soy Ingeniero de sistemas con mas de 4 años de experiencia en aplicaciones de escritorio y web. He manejado diversas tecnologias ofreciendo un optimo analisis de negocio, experiencia de usuario y liderazgo de equipo. 
+              <br>
+              En diversas areas dentro del mundo de la tecnologia. 
+              <del></del></span><del id="pow-trigger"></del>
+          </p>
         </div>
-        <!--. contenedor-conocimientos -->
-
-    </main>
-
-    <footer class="footer">
-        <div class="contenedor">
-            <div class="redes-sociales" id="contacto">
-                Contactos al 77727012
-            </div>
+        <div class="home-hero__cta">
+          <a href="#projects" class="btn btn--bg">PROYECTOS REALIZADOS</a>
         </div>
-        <p class="autor">Dev. Ricardo Atahuachi M</p>
-        <span><i class="boton-arriba fa fa-chevron-up" id="boton-arriba" aria-hidden="true"></i></span>
+      </div>
+      <div class="home-hero__socials">
+        <div class="home-hero__social">
+          <a href="#" class="home-hero__social-icon-link">
+            <img
+              src="./assets/png/linkedin-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a href="#" class="home-hero__social-icon-link">
+            <img
+              src="./assets/png/github-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a href="#" class="home-hero__social-icon-link">
+            <img
+              src="./assets/png/twitter-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a href="#" class="home-hero__social-icon-link">
+            <img
+              src="./assets/png/yt-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a
+            href="#"
+            class="home-hero__social-icon-link home-hero__social-icon-link--bd-none"
+          >
+            <img
+              src="./assets/png/insta-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="home-hero__mouse-scroll-cont">
+        <div class="mouse"></div>
+      </div>
+    </section>
+    <section id="about" class="about sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main">Sobre mí</span>
+          <span class="heading-sec__sub">
+            <span id="tagline">
+              Soy Ingeniero de sistemas con mas de 4 años de experiencia en aplicaciones de escritorio y web. He manejado diversas tecnologias ofreciendo un optimo analisis de negocio, experiencia de usuario y liderazgo de equipo. 
+              <br>
+              En diversas areas dentro del mundo de la tecnologia. Tanto hardware, redes y software
+              <del></del></span><del id="pow-trigger"></del>
+          </span>
+        </h2>
+        <div class="about__content">
+          <div class="about__content-main">
+            <h3 class="about__content-title">Acerca de mi perfil profesional!</h3>
+            <div class="about__content-details">
+              <p class="about__content-details-para">
+                Hey! yo soy
+                <strong>Ricardo Atahuachi</strong>
+                y soy  <strong> Desarrollador Full Stack </strong> de Bolivia
+                <strong> remote </strong>
+                desarrollo trabajos de freelance y consultorias ademas de colaborar con pequeños emprendimientos
+                <strong>productos digitales</strong>.
+              </p>
+              <p class="about__content-details-para">
+                He manejado diversas tecnologias ofreciendo un optimo analisis de negocio, experiencia de usuario y liderazgo de equipo.
+                En diversas areas dentro del mundo de la tecnologia. Tanto hardware, redes y software.
+              </p>
+            </div>
+            <a href="/#contact" class="btn btn--med btn--theme dynamicBgClr"
+              >Contactate conmigo</a
+            >
+          </div>
+          <div class="about__content-skills">
+            <h3 class="about__content-title">Mis Habilidades</h3>
+            <div class="skills">
+              <div class="skills__skill">HTML</div>
+              <div class="skills__skill">CSS</div>
+              <div class="skills__skill">JavaScript</div>
+              <div class="skills__skill">React</div>
+              <div class="skills__skill">SASS</div>
+              <div class="skills__skill">GIT</div>
+              <div class="skills__skill">PHP</div>
+              <div class="skills__skill">Vue JS</div>
+              <div class="skills__skill">Wordpress</div>
+              <div class="skills__skill">Node JS</div>
+              <div class="skills__skill">Angular</div>
+              <div class="skills__skill">Android</div>
+              <div class="skills__skill">IOS</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="projects sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-bg">
+          <span class="heading-sec__main">PROYECTOS REALIZADOS</span>
+          <span class="heading-sec__sub">
+            Los proyectos que son visibles a travez de un dominio se los mencionan, ya que realice varios proyectos  que no se encuentran en produccion o estan en ambientes donde se accede de forma interna en las instituciones.
+          </span>
+        </h2>
+
+        <div class="projects__content">
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/jpeg/proyecto-reclutamiento.jpg"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">SISTEMA DE RECLUTAMIENTO</h3>
+              <p class="projects__row-content-desc">
+                Sistema desarrollado para realizar el reclutamiento de convocatorias a nivel nacional de Bolivia.
+                <br><br>Desarrollado con tecnologias de Angular, NodeJS
+              </p>
+              <a
+                href="./project-1.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >VER</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/jpeg/proyecto-firmador.jpg"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">FIRMADOR DIGITAL</h3>
+              <p class="projects__row-content-desc">
+                Firma documentos digitalmente a travez de un token. <br><br>
+                Desarrollado con tecnologias de VueJS en el lado de Frontend y NodeJS del lado de backend
+              </p>
+              <a
+                href="./project-2.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >VER</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/jpeg/proyecto-matriculacion.jpg"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Sistema de matricuacion para estudiantes universitarios</h3>
+
+              <p class="projects__row-content-desc">
+                Gestiona el proceso de matriculacion universitaria 
+                <br><br>
+                <span>Tecnologías utilizadas:</span>
+                <span class="html">HTML5</span> - <span class="css">CSS3</span> - <span class="javascript">JavaScript</span> - <span class="javascript">PHP</span> - <span class="javascript">Postgres</span>
+              </p>
+              <a
+                href="./project-3.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >VER</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/jpeg/proyecto-ventas.jpg"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Ventas</h3>
+
+              <p class="projects__row-content-desc">
+                <span>Tecnologías utilizadas:</span>
+                <span class="html">HTML5</span> - <span class="css">CSS3</span> - <span class="javascript">JavaScript</span> - <span class="javascript">PHP</span> - <span class="javascript">Postgres</span>
+              </p>
+              <a
+                href="https://desarrollo-test-7c33a.web.app/"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >VER</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/jpeg/proyecto-ruleta.jpg"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Ruleta Rusa</h3>
+
+              <p class="projects__row-content-desc">
+                <span>Tecnologías utilizadas:</span>
+                <span class="html">HTML5</span> - <span class="css">CSS3</span> - <span class="javascript">JavaScript</span> - <span class="javascript">PHP</span> - <span class="javascript">Postgres</span>
+              </p>
+              <a
+                href="https://desarrollo-test-7c33a.web.app/"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >VER</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact sec-pad dynamicBg">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main heading-sec__main--lt">Contactos</span>
+          <span class="heading-sec__sub heading-sec__sub--lt">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
+            tempora explicabo quae quod deserunt eius sapiente
+          </span>
+        </h2>
+        <div class="contact__form-container">
+          <form action="#" class="contact__form">
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="name">Nombre</label>
+              <input
+                required
+                placeholder="Ingrese su Nombre"
+                type="text"
+                class="contact__form-input"
+                name="name"
+                id="name"
+              />
+            </div>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="email">Email</label>
+              <input
+                required
+                placeholder="Ingrese su Correo"
+                type="text"
+                class="contact__form-input"
+                name="email"
+                id="email"
+              />
+            </div>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="message">Mensaje</label>
+              <textarea
+                required
+                cols="30"
+                rows="10"
+                class="contact__form-input"
+                placeholder="Ingrese su mensaje"
+                name="message"
+                id="message"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn--theme contact__btn">
+              Enviar
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/linkedin-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/github-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/twitter-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/yt-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon main-footer__icon--mr-none"
+                  src="./assets/png/insta-ico.png"
+                  alt="icon"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">Ing. Ricardo Atahuachi M</h4>
+            <p class="main-footer__short-desc">
+              Contactos al 77727012
+            </p>
+          </div>
+        </div>
+
+        <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
+        <div class="main-footer__lower">
+          &copy; Copyright 2021. Made by
+          <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
+            >Dev. Ricardo Atahuachi M</a
+          >
+        </div>
+      </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/lightbox-plus-jquery.min.js"></script>
-    <script src="js/t.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
-</body>
-
+    <script src="./index.js"></script>
+  </body>
 </html>
